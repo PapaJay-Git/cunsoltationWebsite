@@ -13,23 +13,58 @@
 <body class="bg-gray-200 poppins-light">
 
     <!-- Navigation -->
-    <nav class="bg-blue-400 text-white px-4 py-8 fixed w-full top-0">
+    <nav class="bg-blue-400 text-white px-4 pb-8 pt-10 fixed w-full top-0">
       <div class="container mx-auto">
         <div class="flex justify-between">
-            <div class="flex row justify-center align-middle">
-              <a href="#" class="text-xl font-bold me-5">Your Brand</a>
+            <div class="flex row justify-center items-center">
+              <a href="#" class="text-xl font-bold me-10">Your Brand</a>
       
-              <ul class="flex row gap-3">
-                  <li>About Us</li>
-                  <li>Services</li>
-                  <li>Testimonials</li>
+              <ul class="transition duration-200 ease-in-out hidden row gap-5 lg:flex">
+                  <li class="transition-all duration-200 ease-in-out cursor-pointer hover:text-gray-300">About Us</li>
+                  <li class="transition-all duration-200 ease-in-out cursor-pointer hover:text-gray-300">Services</li>
+                  <li class="transition-all duration-200 ease-in-out cursor-pointer hover:text-gray-300">Testimonials</li>
               </ul>
+            </div>
+            <div>
+              <span onclick="showFullScreenNav()">
+                <img src="./images/burger.svg" class="w-9 h-9 cursor-pointer">
+              </span>
             </div>
           </div>
       </div>
     </nav>
     <!-- Navigation -->
 
+    <nav class="hidden left-0 px-4 bg-blue-400 fixed w-full right-0 bottom-0 h-full top-0 pb-8 pt-10 text-white transition-all duration-300 ease-in-out" id="fullScreenNav">
+      <div class="container mx-auto">
+        <div class="flex justify-between">
+          <div class="flex row justify-center items-center">
+            <a href="#" class="text-xl font-bold me-10">Your Brand</a>
+          </div>
+          <div>
+            <span onclick="showFullScreenNav()">
+              <img src="./images/close.svg" class="w-9 h-9 cursor-pointer">
+            </span>
+          </div>
+        </div>
+          <ul class="mt-16 ms-4" > 
+            <li class="text-lg font-bold mb-10 transition-all duration-200 ease-in-out cursor-pointer hover:text-gray-300">About Us</li>
+            <li class="text-lg font-bold mb-10  transition-all duration-200 ease-in-out cursor-pointer hover:text-gray-300">Services</li>
+            <li class="text-lg font-bold mb-10 transition-all duration-200 ease-in-out cursor-pointer hover:text-gray-300">Testimonials</li>
+          </ul>
+      </div>
+    </nav>
   
   </body>
+  <script>
+    var showFullScreenNavVar = true;
+    var fullScreenNav = document.getElementById('fullScreenNav');
+
+    const showFullScreenNav = () => {
+      
+      fullScreenNav.style.display = showFullScreenNavVar ? 'block' : 'none';
+      showFullScreenNavVar = !showFullScreenNavVar;
+    }
+
+  </script>
 </html>
