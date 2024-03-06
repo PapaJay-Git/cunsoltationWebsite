@@ -9,20 +9,22 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 </head>
 <body class="bg-gray-200 poppins-light">
 
     <!-- Navigation -->
-    <nav class="bg-gray-800 text-white px-4 pb-8 pt-10 fixed w-full top-0 z-20">
+    <nav class="bg-gray-900 text-white px-4 pb-8 pt-10 fixed w-full top-0 z-20">
       <div class="container mx-auto">
         <div class="flex justify-between">
             <div class="flex row justify-center items-center">
-              <a href="#" class="text-xl font-bold me-10">Your Brand</a>
+              <a href="#" class="text-2xl me-10">Consultation</a>
       
-              <ul class="transition-all duration-300 ease-in-out hidden row gap-5 lg:flex" id="mainNavigationItems">
-                  <li class="transition-all duration-200 ease-in-out cursor-pointer hover:text-gray-300">About Us</li>
-                  <li class="transition-all duration-200 ease-in-out cursor-pointer hover:text-gray-300">Services</li>
-                  <li class="transition-all duration-200 ease-in-out cursor-pointer hover:text-gray-300">Testimonials</li>
+              <ul class="animate__animated hidden row gap-5 lg:flex" id="mainNavigationItems">
+                  <li class="animate__animated cursor-pointer hover:text-gray-300">About Us</li>
+                  <li class="animate__animated cursor-pointer hover:text-gray-300">Services</li>
+                  <li class="animate__animated cursor-pointer hover:text-gray-300">Testimonials</li>
               </ul>
             </div>
             <div>
@@ -39,35 +41,85 @@
     </nav>
     <!-- Navigation -->
 
-    <nav class="px-4 bg-gray-800 w-full text-white z-10 absolute -me-full transition-transform duration-1000 ease-in-out flex justify-center items-center" id="fullScreenNav">
-          <ul> 
-            <li class="flex justify-center items-center text-lg font-bold mb-10 transition-all duration-200 ease-in-out cursor-pointer hover:text-gray-300">About Us</li>
-            <li class="flex justify-center items-center  text-lg font-bold mb-10  transition-all duration-200 ease-in-out cursor-pointer hover:text-gray-300">Services</li>
-            <li class="flex justify-center items-center  text-lg font-bold mb-10 transition-all duration-200 ease-in-out cursor-pointer hover:text-gray-300">Testimonials</li>
-          </ul>
+    <nav class="px-4 bg-gray-900 left-0 right-0 fixed hidden top-0 bottom-0 text-white animate__animated z-10" id="fullScreenNav">
+      <div class="h-screen flex justify-center items-center">
+        <ul> 
+          <li class="animate__animated animate__fadeInRight animate__delay-1s 
+          flex justify-center items-center text-2xl mb-10 cursor-pointer navBarList hover:text-gray-300">About Us</li>
+          <li class="animate__animated animate__fadeInRight animate__delay-1s 
+          flex justify-center items-center  text-2xl mb-10  cursor-pointer navBarList hover:text-gray-300">Services</li>
+          <li class="animate__animated animate__fadeInRight animate__delay-1s 
+          flex justify-center items-center  text-2xl mb-10 cursor-pointer navBarList hover:text-gray-300">Testimonials</li>
+        </ul>
+      </div>
     </nav>
 
-    <section class="px-4 bg-blue-800 w-full mt-24 pb-8 pt-10 text-white transition-all duration-[2000] ease-in-out" >
+    <section class="px-4 bg-gray-900 left-0 right-0 mt-16 py-20 md:py-32 lg:py-40 text-white" >
       <div class="container mx-auto">
-        <div class="flex justify-between">
+        <div class="grid grid-cols-12 gap-4 ">
+          <div class="col-span-12 lg:col-span-7 animate__animated animate__zoomIn">
+            <p class=" text-3xl sm:text-4xl md:text:text-5xl lg:text-6xl ">
+              We are a growth and transformation consulting firm.
+            </p>
+            <p class="mt-6 text-sm">
+              Prophet is dedicated to helping you unlock uncommon growth—growth that is anchored in purpose, is transformative and sustainable over time. We partner with you to manage disruption, bringing the rigor and expertise required to uncover and realize transformative opportunities.
+            </p>
+            <p class="mt-6">
+              <button class="bg-gray-200 text-gray-900 p-2 transition duration-300 rounded-md font-medium hover:bg-gray-600 hover:text-white mt-2">About Consultation</button>
+              <button class="bg-gray-200 text-gray-900 p-2 rounded-md font-medium hover:bg-gray-600 hover:text-white mt-2">Our Services</button>
+            </p>
+          </div>
+          <div class="col-span-12 text-3xl lg:col-span-5 bg-gray-900">
+            <img src="./images/heart2.svg" class="inline-block -mb-36 h-28 w-28 animate__animated animate__zoomIn animate__delay-3s ">
+              <img src="./images/heart1.svg" class="mx-auto -me-2 -mt-5 h-28 w-28 animate__animated animate__zoomIn animate__delay-2s ">
+              <img src="./images/heart3.svg" class="-mt-28 mx-auto h-96 w-96 animate__animated animate__zoomIn animate__delay-1s">
+              <img src="./images/heart1.svg" class="inline-block -mt-36 h-36 w-36 animate__animated animate__rollIn animate__delay-5s">
+              <img src="./images/heart2.svg" class="mx-auto -mt-20 h-28 w-28 animate__animated animate__zoomIn animate__delay-4s">
+        </div>
       </div>
     </section>
   
   </body>
   <script>
     var showFullScreenNavVar = true;
-    var fullScreenNav = document.getElementById('fullScreenNav');
-    var mainNavigationItems = document.getElementById('mainNavigationItems');
     var hambrgerButton = document.getElementById('hambrgerButton');
-    var burgerIcon = './images/burger.svg';
-    var closeIcon = './images/close.svg';
-
+    var ongoing = false;
     const showFullScreenNav = () => {
-      
-      showFullScreenNavVar ? fullScreenNav.classList.remove('-me-full') : fullScreenNav.classList.add('-me-full');
-      showFullScreenNavVar ? hambrgerButton.classList.add('open') : hambrgerButton.classList.remove('open');
-      showFullScreenNavVar ? mainNavigationItems.classList.remove('lg:flex') : mainNavigationItems.classList.add('lg:flex');
+      if(ongoing){
+        return false;
+      }
+      ongoing = true;
+      hambrgerButton.classList.toggle('open');
+
+      if(showFullScreenNavVar){
+        $("#fullScreenNav").removeClass("hidden").addClass("animate__slideInRight");
+        $("#mainNavigationItems").addClass("animate__zoomOut").removeClass("lg:flex");
+      }else{
+        $("#fullScreenNav").addClass("animate__slideOutRight").one("animationend", function () {
+          $(this).addClass("hidden").removeClass("animate__slideOutRight");
+        });
+        $("#mainNavigationItems").removeClass("animate__zoomOut").addClass("lg:flex");
+        $("#mainNavigationItems").addClass("animate__zoomIn").one("animationend", function () {
+          $(this).removeClass("animate__zoomIn");
+        });
+      }
+
       showFullScreenNavVar = !showFullScreenNavVar;
+      ongoing = false;
+      // if(showFullScreenNavVar){
+      //   liElements?.forEach((liElement) =>{
+      //     liElement.classList.toggle('animate__zoomIn');
+      //     liElement.classList.toggle('animate__delay-1s');
+      //     fullScreenNav.classList.toggle('animate__slideInRight');
+      //   });
+      // }else{
+      //   liElements?.forEach((liElement) =>{
+      //     liElement.classList.toggle('animate__fadeInRight');
+      //     liElement.classList.toggle('animate__delay-1s');
+      //     fullScreenNav.classList.toggle('animate__slideOutRight');
+      //   });
+      // }
+      
     }
 
   </script>

@@ -135,7 +135,7 @@
   #hambrgerButton span{
     display: block;
     position: absolute;
-    height: 3px;
+    height: 1px;
     width: 100%;
     background: #ffffff;
     opacity: 1;
