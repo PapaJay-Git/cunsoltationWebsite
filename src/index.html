@@ -13,13 +13,13 @@
 <body class="bg-gray-200 poppins-light">
 
     <!-- Navigation -->
-    <nav class="bg-blue-400 text-white px-4 pb-8 pt-10 fixed w-full top-0">
+    <nav class="bg-gray-800 text-white px-4 pb-8 pt-10 fixed w-full top-0 z-20">
       <div class="container mx-auto">
         <div class="flex justify-between">
             <div class="flex row justify-center items-center">
               <a href="#" class="text-xl font-bold me-10">Your Brand</a>
       
-              <ul class="transition duration-200 ease-in-out hidden row gap-5 lg:flex">
+              <ul class="transition-all duration-300 ease-in-out hidden row gap-5 lg:flex" id="mainNavigationItems">
                   <li class="transition-all duration-200 ease-in-out cursor-pointer hover:text-gray-300">About Us</li>
                   <li class="transition-all duration-200 ease-in-out cursor-pointer hover:text-gray-300">Services</li>
                   <li class="transition-all duration-200 ease-in-out cursor-pointer hover:text-gray-300">Testimonials</li>
@@ -27,7 +27,11 @@
             </div>
             <div>
               <span onclick="showFullScreenNav()">
-                <img src="./images/burger.svg" class="w-9 h-9 cursor-pointer">
+                <div id="hambrgerButton">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
               </span>
             </div>
           </div>
@@ -35,34 +39,34 @@
     </nav>
     <!-- Navigation -->
 
-    <nav class="hidden left-0 px-4 bg-blue-400 fixed w-full right-0 bottom-0 h-full top-0 pb-8 pt-10 text-white transition-all duration-300 ease-in-out" id="fullScreenNav">
+    <nav class="px-4 bg-gray-800 w-full text-white z-10 absolute -me-full transition-transform duration-1000 ease-in-out flex justify-center items-center" id="fullScreenNav">
+          <ul> 
+            <li class="flex justify-center items-center text-lg font-bold mb-10 transition-all duration-200 ease-in-out cursor-pointer hover:text-gray-300">About Us</li>
+            <li class="flex justify-center items-center  text-lg font-bold mb-10  transition-all duration-200 ease-in-out cursor-pointer hover:text-gray-300">Services</li>
+            <li class="flex justify-center items-center  text-lg font-bold mb-10 transition-all duration-200 ease-in-out cursor-pointer hover:text-gray-300">Testimonials</li>
+          </ul>
+    </nav>
+
+    <section class="px-4 bg-blue-800 w-full mt-24 pb-8 pt-10 text-white transition-all duration-[2000] ease-in-out" >
       <div class="container mx-auto">
         <div class="flex justify-between">
-          <div class="flex row justify-center items-center">
-            <a href="#" class="text-xl font-bold me-10">Your Brand</a>
-          </div>
-          <div>
-            <span onclick="showFullScreenNav()">
-              <img src="./images/close.svg" class="w-9 h-9 cursor-pointer">
-            </span>
-          </div>
-        </div>
-          <ul class="mt-16 ms-4" > 
-            <li class="text-lg font-bold mb-10 transition-all duration-200 ease-in-out cursor-pointer hover:text-gray-300">About Us</li>
-            <li class="text-lg font-bold mb-10  transition-all duration-200 ease-in-out cursor-pointer hover:text-gray-300">Services</li>
-            <li class="text-lg font-bold mb-10 transition-all duration-200 ease-in-out cursor-pointer hover:text-gray-300">Testimonials</li>
-          </ul>
       </div>
-    </nav>
+    </section>
   
   </body>
   <script>
     var showFullScreenNavVar = true;
     var fullScreenNav = document.getElementById('fullScreenNav');
+    var mainNavigationItems = document.getElementById('mainNavigationItems');
+    var hambrgerButton = document.getElementById('hambrgerButton');
+    var burgerIcon = './images/burger.svg';
+    var closeIcon = './images/close.svg';
 
     const showFullScreenNav = () => {
       
-      fullScreenNav.style.display = showFullScreenNavVar ? 'block' : 'none';
+      showFullScreenNavVar ? fullScreenNav.classList.remove('-me-full') : fullScreenNav.classList.add('-me-full');
+      showFullScreenNavVar ? hambrgerButton.classList.add('open') : hambrgerButton.classList.remove('open');
+      showFullScreenNavVar ? mainNavigationItems.classList.remove('lg:flex') : mainNavigationItems.classList.add('lg:flex');
       showFullScreenNavVar = !showFullScreenNavVar;
     }
 
