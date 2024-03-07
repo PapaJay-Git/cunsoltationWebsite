@@ -2,9 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-.-me-full{
-  margin-left: -100000px;
+.delay-animation_0_5 {
+  --animate-duration: 0.5s;
 }
+
 .poppins-thin {
     font-family: "Poppins", sans-serif;
     font-weight: 100;
