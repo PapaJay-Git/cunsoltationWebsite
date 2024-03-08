@@ -3,8 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="./output.css" rel="stylesheet">
-
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,7 +10,10 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+
+  <link href="./output.css" rel="stylesheet">
+
 </head>
 <body class="poppins-light">
 
@@ -84,13 +85,13 @@
       <div class="container mx-auto">
         <div class="grid grid-cols-12 gap-4 ">
           <div class="col-span-12 lg:col-span-7">
-            <p class=" text-3xl sm:text-4xl md:text:text-5xl lg:text-6xl hidden font-light animate__animated animate__delay-1s" id="animatedElement">
+            <p class=" text-3xl sm:text-4xl md:text:text-5xl lg:text-6xl  font-light animate__animated animate__delay-1s opacity-0 section2-1">
               We are a growth and transformation consulting firm.
             </p>
-            <p class="mt-6 text-sm font-light  animate__animated animate__fadeInLeft animate__delay-2s">
+            <p class="mt-6 text-sm font-light  animate__animated animate__delay-1s opacity-0 section2-2">
               Prophet is dedicated to helping you unlock uncommon growth—growth that is anchored in purpose, is transformative and sustainable over time. We partner with you to manage disruption, bringing the rigor and expertise required to uncover and realize transformative opportunities.
             </p>
-            <p class="mt-6  animate__animated animate__fadeInLeft animate__delay-3s">
+            <p class="mt-6  animate__animated animate__delay-1s opacity-0 section2-3">
               <button class="bg-gray-200 text-gray-900 p-2 rounded-md font-normal text-xs md:text-sm lg:text-base hover:bg-gray-600 hover:text-white mt-2">About Consultation</button>
               <button class="bg-gray-200 text-gray-900 p-2 rounded-md font-normal text-xs md:text-sm lg:text-base hover:bg-gray-600 hover:text-white mt-2">Our Services</button>
            
@@ -103,21 +104,33 @@
   </body>
   <script>
     var controller = new ScrollMagic.Controller();
+    var elements = [
+      { elementID: '.section2-1', animation: 'animate__fadeInLeft' },
+      { elementID: '.section2-2', animation: 'animate__fadeInLeft' },
+      { elementID: '.section2-3', animation: 'animate__fadeInLeft' }
+    ];
 
-// Create a scene for the animated element
-var scene = new ScrollMagic.Scene({
-   triggerElement: "#animatedElement", // Trigger the animation when this element comes into view
-   triggerHook: 0.9, // Trigger animation when 90% of the element is in view
-   reverse: false // Keep the animation active as long as the element is in view
-})
-.on("enter", function () {
-   document.getElementById('animatedElement').classList.add('animate__fadeInLeft', 'block');
-})
-.on("leave", function () {
-   document.getElementById('animatedElement').classList.remove('animate__fadeInLeft', 'block');
-})
-.addTo(controller);
 
+    function scrollMagicPerElement(elemenetID, animation){
+        // Create a scene for the animated element
+        var scene = new ScrollMagic.Scene({
+          triggerElement: elemenetID, // Trigger the animation when this element comes into view
+          triggerHook: 0.9, // Trigger animation when 90% of the element is in view
+          reverse: false // Keep the animation active as long as the element is in view
+        })
+        .on("enter", function () {
+          document.querySelector(elemenetID).classList.add(animation);
+          document.querySelector(elemenetID).classList.remove('opacity-0');
+        })
+        .on("leave", function () {
+          document.querySelector(elemenetID).classList.remove(animation);
+        })
+        .addTo(controller);
+    }
+    
+    elements.forEach(function(element) {
+      scrollMagicPerElement(element.elementID, element.animation);
+    });
 
     var showFullScreenNavVar = true;
     var hambrgerButton = document.getElementById('hambrgerButton');

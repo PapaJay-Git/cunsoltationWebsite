@@ -2,8 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-.delay-animation_0_5 {
-  --animate-duration: 0.5s;
+:root{
+  --animate-delay: 0.5s;
 }
 
 .poppins-thin {
