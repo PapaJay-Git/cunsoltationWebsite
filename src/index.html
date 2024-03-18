@@ -6,11 +6,11 @@
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="animate.min.css"/>
+  <script src="jquery-3.6.4.min.js"></script>
+  <script src="ScrollMagic.min.js"></script>
+  <script src="debug.addIndicators.min.js"></script>
 
   <link href="./output.css" rel="stylesheet">
 
@@ -145,7 +145,9 @@
       if(showFullScreenNavVar){
           await Promise.all([
               $("#fullScreenNav").removeClass("hidden").addClass("animate__slideInRight"),
-              $("#mainNavigationItems").addClass("animate__zoomOut").removeClass("lg:flex")
+              $("#mainNavigationItems").addClass("animate__zoomOut").removeClass("lg:flex"),
+              (showFullScreenNavVar = !showFullScreenNavVar),
+              (ongoing = false)
           ]);
       }else{
           await Promise.all([
@@ -157,13 +159,11 @@
               
               $("#mainNavigationItems").addClass("animate__zoomIn").one("animationend", function () {
                 $(this).removeClass("animate__zoomIn");
-              })
+              }),
+              (showFullScreenNavVar = !showFullScreenNavVar),
+              (ongoing = false)
           ]);
       }
-
-      console.log(1);
-      showFullScreenNavVar = !showFullScreenNavVar;
-      ongoing = false;
     }
 
   </script>
