@@ -1,8 +1,9 @@
 var controller = new ScrollMagic.Controller();
 var elements = [
-  { elementID: '.section2-1', animation: 'animate__fadeInLeft' },
-  { elementID: '.section2-2', animation: 'animate__fadeInLeft' },
-  { elementID: '.section2-3', animation: 'animate__fadeInLeft' }
+  { elementID: '.section-2-header', animation: 'animate__zoomIn' },
+  { elementID: '.section-2-data-1', animation: 'animate__zoomIn' },
+  { elementID: '.section-2-data-2', animation: 'animate__zoomIn' },
+  { elementID: '.section-2-data-3', animation: 'animate__zoomIn' },
 ];
 
 

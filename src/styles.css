@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root{
+  --animate-delay: 0.5s;
+  --default-color: #0f223b;
+}
+
+.navigation-color{
+  background-color: #0e1d31;
+}
+.default-bg{
+  background-color: var(--default-color);
+}
+
+.default-text-color{
+  color: var(--default-color);
+}
+
+
+.custom-shape-divider-bottom-1710748739 {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1710748739 svg {
+  position: relative;
+  display: block;
+  width: calc(120% + 1.3px);
+  height: 103px;
+  transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1710748739 .shape-fill {
+  fill: #FFFFFF;
+}
