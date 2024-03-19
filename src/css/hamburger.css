@@ -53,6 +53,7 @@
   
   #hambrgerButton span:nth-child(3) {
     top: 20px;
+    width: 50%;
   }
   
   #hambrgerButton.open span:nth-child(1) {
@@ -69,6 +70,7 @@
   
   #hambrgerButton.open span:nth-child(3) {
     top: 10px;
+    width: 100%;
     -webkit-transform: rotate(-45deg);
     -moz-transform: rotate(-45deg);
     -o-transform: rotate(-45deg);

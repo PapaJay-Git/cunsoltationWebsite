@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Kreon:wght@300..700&display=swap');
+
+
+.kreon-300 {
+  font-family: "Kreon", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+.kreon-400 {
+  font-family: "Kreon", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.kreon-500 {
+  font-family: "Kreon", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+.kreon-600 {
+  font-family: "Kreon", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+.kreon-700 {
+  font-family: "Kreon", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}

@@ -1,4 +1,4 @@
-var showFullScreenNavVar = true;
+
 var hambrgerButton = document.getElementById('hambrgerButton');
 var ongoing = false;
 const showFullScreenNav = async () => {
@@ -8,11 +8,10 @@ const showFullScreenNav = async () => {
   ongoing = true;
   hambrgerButton.classList.toggle('open');
 
-  if(showFullScreenNavVar){
+  if(hambrgerButton.classList.contains('open')){
       await Promise.all([
           $("#fullScreenNav").removeClass("hidden").addClass("animate__slideInRight"),
           $("#mainNavigationItems").addClass("animate__zoomOut").removeClass("lg:flex"),
-          (showFullScreenNavVar = !showFullScreenNavVar),
           (ongoing = false)
       ]);
   }else{
@@ -26,7 +25,6 @@ const showFullScreenNav = async () => {
           $("#mainNavigationItems").addClass("animate__zoomIn").one("animationend", function () {
             $(this).removeClass("animate__zoomIn");
           }),
-          (showFullScreenNavVar = !showFullScreenNavVar),
           (ongoing = false)
       ]);
   }
