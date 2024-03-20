@@ -1,9 +1,10 @@
-<!doctype html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+
+<!DOCTYPE html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <title>Home - DRHM Management Consultancy Services</title>
   <!-- CDN ASSETS -->
   <link rel="stylesheet" href="./cdn-assets/css/google-poppins.css">
@@ -15,11 +16,11 @@
   <!-- CDN ASSETS -->
 
   <!-- TAILWDIND OUTPUT -->
-  <link href="./output.css" rel="stylesheet">
+  @vite('resources/css/app.css')
   <!-- TAILWDIND OUTPUT -->
 
   <!-- CUSTOM CSS -->
-  <link href="./styles.css" rel="stylesheet">
+  <link href="./css/styles.css" rel="stylesheet">
   <link href="./css/hamburger.css" rel="stylesheet">
   <!-- CUSTOM CSS -->
 
@@ -36,8 +37,8 @@
                 <p class="text-xs inline-block">Management Consultancy <br> Services</p>
               </a>
             </div>
-            
-      
+
+
             <div  class="pt-2">
               <ul class="animate__animated hidden row gap-5 lg:flex" id="mainNavigationItems">
                   <li class="animate__animated cursor-pointer transition-colors duration-200 ease-in hover:text-blue-400 font-extralight text-sm text-blue-300">HOME</li>
@@ -61,7 +62,7 @@
 
     <nav class="px-4 navigation-color w-full fixed hidden top-0 bottom-0 text-white animate__animated z-10" id="fullScreenNav">
       <div class="h-screen flex justify-center items-center">
-        <ul class="animate__animated animate__fadeInRight animate__delay-1s"> 
+        <ul class="animate__animated animate__fadeInRight animate__delay-1s">
           <li class="flex justify-center items-center text-xl md:text-2xl mb-10 cursor-pointer hover:text-blue-400 font-thin text-blue-300">HOME</li>
           <li class="flex justify-center items-center text-xl md:text-2xl mb-10 cursor-pointer hover:text-blue-400 font-thin">ABOUT US</li>
           <li class="flex justify-center items-center text-xl md:text-2xl  mb-10  cursor-pointer hover:text-blue-400 font-thin">SERVICES</li>
@@ -81,8 +82,8 @@
               <p class="text-center lg:text-left text-3xl sm:text-4xl md:text:text-5xl lg:text-6xl  animate__animated animate__fadeInLeft animate__delay-1s archivo-black-regular">Reroute to Success</p>
             </p>
             <p class="text-center lg:text-left mt-6 text-sm font-light animate__animated animate__fadeInLeft animate__delay-2s">
-              At <span class="font-bold">DRHM</span>, we believe that success is not just a destination, but a journey of continuous improvement and innovation. Our consulting services offer expert guidance and strategic insights to help businesses navigate their path to success with confidence and clarity... 
-              
+              At <span class="font-bold">DRHM</span>, we believe that success is not just a destination, but a journey of continuous improvement and innovation. Our consulting services offer expert guidance and strategic insights to help businesses navigate their path to success with confidence and clarity...
+
               <!-- Whether it's achieving quality management certifications, ensuring food safety compliance, optimizing facility layout, or streamlining HR processes, we're here to guide you on your journey. With our tailored solutions and unwavering commitment to excellence, we'll help you reroute any obstacles into opportunities, unlocking new pathways to sustainable growth and prosperity. Let us be your compass on the road to success. -->
             </p>
             <p class="text-center lg:text-left mt-2 animate__animated animate__fadeInLeft animate__delay-3s">
@@ -138,7 +139,7 @@
                 <p class="font-light text-sm lg:text-base px-5 sm:px-10 md:px-16 lg:px-20 ">
                   Our team comprises world-class experts with extensive experience and knowledge in their respective fields
                 </p>
-            </div> 
+            </div>
             <div class="col-span-12 sm:col-span-12 lg:col-span-4 block  text-center opacity-0 animate__animated animate__delay-1s section-2-data-3">
                 <img src="./images/support.svg" alt="Supportive image" class="w-14 h-14 block mx-auto" >
                 <span class="font-medium text-base lg:text-xl block py-5 archivo-black-regular">Supportive</span>
@@ -153,7 +154,7 @@
     </section>
 
 
-    
+
 
     <!-- divider -->
     <section class="relative w-full">
@@ -170,24 +171,24 @@
     <section class="px-4 w-full py-16 md:py-28 lg:py-36 default-bg text-white">
       <div class="container mx-auto">
         <div class="grid grid-cols-12 gap-4">
-          
+
           <div class="col-span-12 lg:col-span-5 lg:-mt-5 flex justify-center mx-5">
             <img src="./images/empowerment.jpg" alt="empowerment image" class="h-56 w-56 sm:h-72 sm:w-72 md:h-80 md:w-80 lg:h-96 lg:w-96 object-cover rounded-full shadow-xl shadow-sky-900 opacity-0 animate__animated animate__delay-1s section-3-data-image ">
         </div>
-        
+
           <div class="col-span-12 lg:col-span-7 mx-4 sm:mx-6 md:mx-8 lg:mx-16 pt-5 lg:pt-0">
             <p class="font-light">
-              <p class="text-center lg:text-left text-base sm:text-xl md:text:text-2xl lg:text-3xl  animate__animated animate__delay-1s archivo-black-regular section-3-data-header opacity-0">If there's one word to describe DHRM, it's "Empowerment".</p>
+              <p class="text-center lg:text-left text-base sm:text-xl md:text:text-2xl lg:text-3xl  animate__animated animate__delay-1s archivo-black-regular section-3-data-header opacity-0">If there's one word to describe DRHM, it's "Empowerment".</p>
             </p>
             <p class="text-center lg:text-left mt-6 text-sm font-light animate__animated animate__delay-2s pt-3 pb-10 lg:pb-5 section-3-data-description opacity-0">
               At <span class="font-bold">DRHM</span>, we are dedicated to empowerment. We believe in equipping businesses with the tools, knowledge, and support they need to unlock their full potential and achieve success. Through our comprehensive consulting services, we empower our clients to navigate complex challenges, streamline processes, and cultivate a culture of excellence. With RDHM by your side, you'll have the confidence and resources to overcome obstacles, seize opportunities, and chart a course towards sustainable growth and prosperity. Let us empower your journey to success.
             </p>
           </div>
-     
+
 
       </div>
     </section>
-    
+
     <!-- divider -->
     <section class="relative w-full">
       <div class="custom-shape-divider-bottom-2">
@@ -219,7 +220,7 @@
             <div class="col-span-12 sm:col-span-4 lg:col-span-4 block  text-center opacity-0 animate__animated animate__delay-1s section-4-data-2 default-bg py-8 shadow-sky-800 shadow-2xl">
                 <img src="./images/expertise.svg" alt="Expertise image" class="w-14 h-14 block mx-auto" >
                 <span class="font-extralight text-sm lg:text-base block py-5 mx-3">Lailens Pastries</span>
-            </div> 
+            </div>
             <div class="col-span-12 sm:col-span-4 lg:col-span-4 block  text-center opacity-0 animate__animated animate__delay-1s section-4-data-3 default-bg py-8 shadow-sky-800 shadow-2xl">
                 <img src="./images/support.svg" alt="Supportive image" class="w-14 h-14 block mx-auto" >
                 <span class="font-extralight text-sm lg:text-base block py-5 mx-3">Golden Crown Petals</span>
@@ -229,12 +230,12 @@
 
       </div>
     </section>
-    
-    
 
 
-    
-  
+
+
+
+
     <section class="px-4 w-full py-6 md:py-16 lg:py-24 default-bg text-white">
       <div class="container mx-auto">
         <div class="grid grid-cols-12 gap-3">
@@ -298,8 +299,8 @@
     </section>
 
 
-  
-  
+
+
 
 
   </body>
