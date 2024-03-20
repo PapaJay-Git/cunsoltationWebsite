@@ -6,7 +6,12 @@ export default {
       "./resources/**/*.vue",
     ],
     theme: {
-      extend: {},
+      extend: {
+        height: {
+            '500': '500px', // Add your custom value to the height scale
+          },
+
+      },
     },
     plugins: [],
   }

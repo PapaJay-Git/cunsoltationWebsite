@@ -26,11 +26,11 @@ function scrollMagicPerElement(elemenetID, animation){
       reverse: false // Keep the animation active as long as the element is in view
     })
     .on("enter", function () {
-      document.querySelector(elemenetID).classList.add(animation);
-      document.querySelector(elemenetID).classList.remove('opacity-0');
+      document.querySelector(elemenetID)?.classList.add(animation);
+      document.querySelector(elemenetID)?.classList.remove('opacity-0');
     })
     .on("leave", function () {
-      document.querySelector(elemenetID).classList.remove(animation);
+      document.querySelector(elemenetID)?.classList.remove(animation);
     })
     .addTo(controller);
 }

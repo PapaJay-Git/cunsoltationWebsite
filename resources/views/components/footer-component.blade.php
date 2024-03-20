@@ -1,5 +1,5 @@
 <div>
- <footer class="px-4 w-full py-6 md:py-16 lg:py-24 default-bg text-white">
+ <footer class="px-4 w-full py-6 md:py-16 lg:py-24 navigation-color text-white">
     <div class="container mx-auto">
       <div class="grid grid-cols-12 gap-3">
         <div class="col-span-6 sm:col-span-6 lg:col-span-3 pt-10">

@@ -7,13 +7,14 @@ Home - DRHM Management Consultancy Services
 @section('mainContent')
 
     <x-navigation-component active="home" />
-
     <x-home.intro-section-component />
-    <x-custom-shape-divider-bottom-first />
+    <x-dividers.bottom-first />
     <x-home.solution-support-section-component />
-    <x-custom-shape-divider-top-first />
+    <x-dividers.top-first />
     <x-home.one-word-description-section-component />
-    <x-custom-shape-divider-bottom-second />
+    <x-dividers.bottom-second />
+    <x-home.founder-introduction-section-component />
+    <x-dividers.top-second />
     <x-home.clients-section-component />
 
 @endsection

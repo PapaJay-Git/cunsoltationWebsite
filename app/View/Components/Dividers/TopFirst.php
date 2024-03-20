@@ -1,12 +1,12 @@
 <?php
 
-namespace App\View\Components;
+namespace App\View\Components\Dividers;
 
 use Closure;
 use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
 
-class CustomShapeDividerBottomSecond extends Component
+class CustomShapeDividerTopFirst extends Component
 {
     /**
      * Create a new component instance.
@@ -21,6 +21,6 @@ class CustomShapeDividerBottomSecond extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('components.custom-shape-divider-bottom-second');
+        return view('components.dividers.top-first');
     }
 }
