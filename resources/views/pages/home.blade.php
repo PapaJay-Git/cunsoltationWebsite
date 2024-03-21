@@ -15,6 +15,7 @@ Home - DRHM Management Consultancy Services
     <x-dividers.bottom-second />
     <x-home.founder-introduction-section-component />
     <x-dividers.top-second />
+    <x-dividers.solo-component />
     <x-home.clients-section-component />
 
 @endsection

@@ -6,7 +6,7 @@ use Closure;
 use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
 
-class TopFirst extends Component
+class SoloComponent extends Component
 {
     /**
      * Create a new component instance.
@@ -21,6 +21,6 @@ class TopFirst extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('components.dividers.top-first');
+        return view('components.dividers.solo-component');
     }
 }

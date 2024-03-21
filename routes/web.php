@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ServiceController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -19,6 +20,7 @@ Route::get('/', function () {
 Route::get('/home', function () {
     return view('pages.home');
 });
-Route::get('/services', function () {
-    return view('pages.services');
+Route::get('/about-us', function () {
+    return view('pages.about-us');
 });
+Route::get('/services', [ServiceController::class, 'index']);

@@ -10,9 +10,9 @@
          </div>
 
         <div class="grid grid-cols-12 gap-4 pt-12 text-center text-white">
-          <x-client-card-component client-name="Masagana Farm Agriventures Inc." client-logo="comprehensive.svg" class-identifier="section-4-data-1" />
-          <x-client-card-component client-name="Lailens Pastries" client-logo="expertise.svg" class-identifier="section-4-data-2" />
-          <x-client-card-component client-name="Golden Crown Petals" client-logo="support.svg" class-identifier="section-4-data-3" />
+          <x-client-card-component client-name="Masagana Farm Agriventures Inc." client-logo="masagana.jpeg" class-identifier="section-4-data-1" />
+          <x-client-card-component client-name="Lailens Pastries" client-logo="lailens_pastries.jpeg" class-identifier="section-4-data-2" />
+          <x-client-card-component client-name="Golden Crown Petals" client-logo="goldenCrownPetals.jpg" class-identifier="section-4-data-3" />
         </div>
 
     </div>

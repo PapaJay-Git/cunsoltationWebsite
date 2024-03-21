@@ -3,9 +3,11 @@
   --animate-delay: 0.5s;
   --default-color: #0f223b;
 }
-
+html {
+    scroll-behavior: smooth;
+}
 .navigation-color{
-  background-color: #0e1d31;
+    background-color: #0e1d31;
 }
 .default-bg{
   background-color: var(--default-color);
@@ -126,5 +128,49 @@
 }
 
 .custom-shape-divider-top-1710916458 .shape-fill {
+    fill: #FFFFFF;
+}
+
+
+.custom-shape-divider-bottom-1710986517 {
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1710986517 svg {
+    position: relative;
+    display: block;
+    width: calc(135% + 1.3px);
+    height: 30px;
+}
+
+.custom-shape-divider-bottom-1710986517 .shape-fill {
+    fill: #FFFFFF;
+}
+
+
+
+.custom-shape-divider-top-1710986610 {
+    position: absolute;
+    top: -1px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1710986610 svg {
+    position: relative;
+    display: block;
+    width: calc(135% + 1.3px);
+    height: 36px;
+}
+
+.custom-shape-divider-top-1710986610 .shape-fill {
     fill: #FFFFFF;
 }

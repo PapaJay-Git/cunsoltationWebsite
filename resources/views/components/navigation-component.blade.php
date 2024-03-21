@@ -6,6 +6,7 @@
                     <div class="flex justify-between">
                         <div class="flex row justify-center">
                             <a href="#" title="Home">
+                            {{-- <img src="./images/DRHM_LOGO.png" alt="DRHM logo" class="w-auto h-16 rounded-md"> --}}
                             <p class="text-4xl archivo-black-regular inline-block">DRHM</p>
                             <p class="text-xs inline-block">Management Consultancy <br> Services</p>
                             </a>

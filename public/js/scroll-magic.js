@@ -15,6 +15,60 @@ var elements = [
   { elementID: '.section-4-data-1', animation: 'animate__fadeInLeft' },
   { elementID: '.section-4-data-2', animation: 'animate__fadeInUp' },
   { elementID: '.section-4-data-3', animation: 'animate__fadeInRight' },
+
+
+
+
+  { elementID: '.services-1-data-1', animation: 'animate__fadeInLeft' },
+  { elementID: '.services-1-data-2', animation: 'animate__fadeInRight' },
+  { elementID: '.services-1-data-3', animation: 'animate__fadeInRight' },
+
+  { elementID: '.services-2-data-1', animation: 'animate__fadeInLeft' },
+  { elementID: '.services-2-data-2', animation: 'animate__fadeInRight' },
+  { elementID: '.services-2-data-3', animation: 'animate__fadeInRight' },
+
+  { elementID: '.services-3-data-1', animation: 'animate__fadeInLeft' },
+  { elementID: '.services-3-data-2', animation: 'animate__fadeInRight' },
+  { elementID: '.services-3-data-3', animation: 'animate__fadeInRight' },
+
+  { elementID: '.services-4-data-1', animation: 'animate__fadeInLeft' },
+  { elementID: '.services-4-data-2', animation: 'animate__fadeInRight' },
+  { elementID: '.services-4-data-3', animation: 'animate__fadeInRight' },
+
+  { elementID: '.services-5-data-1', animation: 'animate__fadeInLeft' },
+  { elementID: '.services-5-data-2', animation: 'animate__fadeInRight' },
+  { elementID: '.services-5-data-3', animation: 'animate__fadeInRight' },
+
+  { elementID: '.services-6-data-1', animation: 'animate__fadeInLeft' },
+  { elementID: '.services-6-data-2', animation: 'animate__fadeInRight' },
+  { elementID: '.services-6-data-3', animation: 'animate__fadeInRight' },
+
+  { elementID: '.services-7-data-1', animation: 'animate__fadeInLeft' },
+  { elementID: '.services-7-data-2', animation: 'animate__fadeInRight' },
+  { elementID: '.services-7-data-3', animation: 'animate__fadeInRight' },
+
+  { elementID: '.services-8-data-1', animation: 'animate__fadeInLeft' },
+  { elementID: '.services-8-data-2', animation: 'animate__fadeInRight' },
+  { elementID: '.services-8-data-3', animation: 'animate__fadeInRight' },
+
+  { elementID: '.services-9-data-1', animation: 'animate__fadeInLeft' },
+  { elementID: '.services-9-data-2', animation: 'animate__fadeInRight' },
+  { elementID: '.services-9-data-3', animation: 'animate__fadeInRight' },
+
+  { elementID: '.services-10-data-1', animation: 'animate__fadeInLeft' },
+  { elementID: '.services-10-data-2', animation: 'animate__fadeInRight' },
+  { elementID: '.services-10-data-3', animation: 'animate__fadeInRight' },
+
+  { elementID: '.services-11-data-1', animation: 'animate__fadeInLeft' },
+  { elementID: '.services-11-data-2', animation: 'animate__fadeInRight' },
+  { elementID: '.services-11-data-3', animation: 'animate__fadeInRight' },
+
+  { elementID: '.founder-section-1', animation: 'animate__fadeInLeft' },
+  { elementID: '.founder-section-2', animation: 'animate__fadeInLeft' },
+  { elementID: '.founder-section-3', animation: 'animate__fadeInLeft' },
+  { elementID: '.founder-section-4', animation: 'animate__fadeInRight' },
+
+
 ];
 
 

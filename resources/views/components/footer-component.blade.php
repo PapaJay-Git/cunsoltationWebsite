@@ -11,8 +11,8 @@
               </a>
             </li>
             <li class="text-base font-extralight cursor-pointer text-blue-300 hover:border-b hover:border-b-blue-300 w-fit transition-all duration-75 ease-in-out">HOME</li>
-            <li class="text-base font-extralight cursor-pointer text-blue-300 hover:border-b hover:border-b-blue-300 w-fit transition-all duration-75 ease-in-out">ABOUT US</li>
             <li class="text-base font-extralight cursor-pointer text-blue-300 hover:border-b hover:border-b-blue-300 w-fit transition-all duration-75 ease-in-out">SERVICES</li>
+            <li class="text-base font-extralight cursor-pointer text-blue-300 hover:border-b hover:border-b-blue-300 w-fit transition-all duration-75 ease-in-out">ABOUT US</li>
            </ul>
         </div>
         <div class="col-span-6 sm:col-span-6 lg:col-span-3 pt-10">
