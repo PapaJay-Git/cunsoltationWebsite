@@ -1,6 +1,9 @@
 
-<section class="px-4 w-full py-16 md:py-28 lg:py-36 default-text-color">
-    <div class="container mx-auto">
+<section class="relative px-4 w-full py-16 md:py-22 lg:py-28 default-text-color">
+    <div class="absolute left-0 top-0 bg-gray-200 w-1/2 h-full rounded-r-full">
+
+    </div>
+    <div class="container mx-auto ">
 
         <div class="block text-xl md:text-2xl lg:text-3xl text-center font-medium opacity-0 animate__animated animate__delay-1s section-2-header archivo-black-regular">
          Integrated Solutions & Support

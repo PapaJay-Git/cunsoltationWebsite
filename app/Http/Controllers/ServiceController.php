@@ -11,19 +11,19 @@ class ServiceController extends Controller
 
     $servicesData = [
             [
-                'name' => 'Quality Management Certification Process ISO 9001',
-                'description' => "Certify your organization's commitment to quality with our ISO 9001 certification services. Our expert team will guide you through the process, ensuring compliance and driving continuous improvement.",
-                'imageBackground' => 'QualityManagementCertification.jpg',
-                'classIdentifier' => 'services-1-data',
-                'isReverse' => false
-
-            ],
-            [
                 'name' => 'Food Safety Management Certification Process ISO 22000',
                 'description' => "Embark on the journey towards food safety excellence with our ISO 22000 certification services. Our expert team will guide you through every step of the certification process, ensuring compliance with international food safety standards.",
                 'imageBackground' => 'FoodSafetyManagementCertification.jpg',
+                'classIdentifier' => 'services-1-data',
+                'isReverse' => false
+            ],
+            [
+                'name' => 'Quality Management Certification Process ISO 9001',
+                'description' => "Certify your organization's commitment to quality with our ISO 9001 certification services. Our expert team will guide you through the process, ensuring compliance and driving continuous improvement.",
+                'imageBackground' => 'QualityManagementCertification.jpg',
                 'classIdentifier' => 'services-2-data',
                 'isReverse' => true
+
             ],
             [
                 'name' => 'Plant/Facility Layout Design',

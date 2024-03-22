@@ -1,8 +1,8 @@
   /* Hamburger */
 
   #hambrgerButton{
-    width: 30px;
-    height: 28px;
+    width: 20px;
+    height: 23px;
     position: relative;
     margin: auto auto;
     -webkit-transform: rotate(0deg);
@@ -46,35 +46,35 @@
   #hambrgerButton span:nth-child(1) {
     top: 0px;
   }
-  
+
   #hambrgerButton span:nth-child(2) {
-    top: 10px;
+    top: 7px;
   }
-  
+
   #hambrgerButton span:nth-child(3) {
-    top: 20px;
+    top: 14px;
     width: 50%;
   }
-  
+
   #hambrgerButton.open span:nth-child(1) {
-    top: 10px;
+    top: 7px;
     -webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
     -o-transform: rotate(45deg);
     transform: rotate(45deg);
   }
-  
+
   #hambrgerButton.open span:nth-child(2) {
     opacity: 0;
   }
-  
+
   #hambrgerButton.open span:nth-child(3) {
-    top: 10px;
+    top: 7px;
     width: 100%;
     -webkit-transform: rotate(-45deg);
     -moz-transform: rotate(-45deg);
     -o-transform: rotate(-45deg);
     transform: rotate(-45deg);
   }
-  
+
   /* Hamburger */

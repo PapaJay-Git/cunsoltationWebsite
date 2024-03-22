@@ -8,9 +8,9 @@
 
         <div class="col-span-12 lg:col-span-7 mx-4 sm:mx-6 md:mx-8 lg:mx-16 pt-5 lg:pt-0">
           <p class="font-light">
-            <p class="text-center lg:text-left text-base sm:text-xl md:text:text-2xl lg:text-3xl  animate__animated animate__delay-1s archivo-black-regular section-3-data-header opacity-0">If there's one word to describe DRHM, it's "Empowerment".</p>
+            <p class="text-center lg:text-left text-xl md:text:text-2xl lg:text-3xl  animate__animated animate__delay-1s archivo-black-regular section-3-data-header opacity-0">If there's one word to describe DRHM, it's "Empowerment".</p>
           </p>
-          <p class="text-center lg:text-left mt-6 text-sm font-light animate__animated animate__delay-2s pt-3 pb-10 lg:pb-5 section-3-data-description opacity-0">
+          <p class="text-center lg:text-left mt-6 text-xs md:text-sm lg:text-base font-light animate__animated animate__delay-2s pt-3 pb-10 lg:pb-5 section-3-data-description opacity-0">
             At <span class="font-bold">DRHM</span>, we are dedicated to empowerment. We believe in equipping businesses with the tools, knowledge, and support they need to unlock their full potential and achieve success. Through our comprehensive consulting services, we empower our clients to navigate complex challenges, streamline processes, and cultivate a culture of excellence. With RDHM by your side, you'll have the confidence and resources to overcome obstacles, seize opportunities, and chart a course towards sustainable growth and prosperity. Let us empower your journey to success.
           </p>
         </div>

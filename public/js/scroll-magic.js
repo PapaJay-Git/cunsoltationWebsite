@@ -16,9 +16,6 @@ var elements = [
   { elementID: '.section-4-data-2', animation: 'animate__fadeInUp' },
   { elementID: '.section-4-data-3', animation: 'animate__fadeInRight' },
 
-
-
-
   { elementID: '.services-1-data-1', animation: 'animate__fadeInLeft' },
   { elementID: '.services-1-data-2', animation: 'animate__fadeInRight' },
   { elementID: '.services-1-data-3', animation: 'animate__fadeInRight' },
@@ -72,19 +69,18 @@ var elements = [
 ];
 
 
-function scrollMagicPerElement(elemenetID, animation){
-    // Create a scene for the animated element
+function scrollMagicPerElement(elemenentID, animation){
     var scene = new ScrollMagic.Scene({
-      triggerElement: elemenetID, // Trigger the animation when this element comes into view
-      triggerHook: 0.9, // Trigger animation when 90% of the element is in view
-      reverse: false // Keep the animation active as long as the element is in view
+      triggerElement: elemenentID,
+      triggerHook: 1,
+      reverse: false
     })
     .on("enter", function () {
-      document.querySelector(elemenetID)?.classList.add(animation);
-      document.querySelector(elemenetID)?.classList.remove('opacity-0');
+      document.querySelector(elemenentID)?.classList.add(animation);
+      document.querySelector(elemenentID)?.classList.remove('opacity-0');
     })
     .on("leave", function () {
-      document.querySelector(elemenetID)?.classList.remove(animation);
+      document.querySelector(elemenentID)?.classList.remove(animation);
     })
     .addTo(controller);
 }
@@ -92,3 +88,16 @@ function scrollMagicPerElement(elemenetID, animation){
 elements.forEach(function(element) {
   scrollMagicPerElement(element.elementID, element.animation);
 });
+$(document).ready(function(){
+    $(".owl-carousel").owlCarousel({
+        loop: true,
+        dots: true,
+        items: 1,
+        center: true,
+        margin:10,
+        nav:false,
+        autoplay:true,
+        autoplayTimeout:3000,
+        autoplayHoverPause:true,
+    });
+  });

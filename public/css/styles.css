@@ -20,7 +20,7 @@ html {
 
 .custom-shape-divider-bottom-1 {
   position: absolute;
-  bottom: 0;
+  bottom: -1px;
   left: 0;
   width: 100%;
   overflow: hidden;
@@ -43,7 +43,7 @@ html {
 
 .custom-shape-divider-top-1 {
   position: absolute;
-  top: 0;
+  top: -1px;
   left: 0;
   width: 100%;
   overflow: hidden;
@@ -64,7 +64,7 @@ html {
 
 .custom-shape-divider-bottom-2 {
   position: absolute;
-  bottom: 0;
+  bottom: -1px;
   left: 0;
   width: 100%;
   overflow: hidden;
@@ -90,7 +90,7 @@ html {
 
 .custom-shape-divider-top-1710835875 {
   position: absolute;
-  top: 0;
+  top: -1px;
   left: 0;
   width: 100%;
   overflow: hidden;
@@ -113,7 +113,7 @@ html {
 
 .custom-shape-divider-top-1710916458 {
     position: absolute;
-    top: 0;
+    top: -1px;
     left: 0;
     width: 100%;
     overflow: hidden;
@@ -149,8 +149,11 @@ html {
     height: 30px;
 }
 
-.custom-shape-divider-bottom-1710986517 .shape-fill {
+.custom-shape-divider-bottom-1710986517.reverse-true .shape-fill {
     fill: #FFFFFF;
+}
+.custom-shape-divider-bottom-1710986517.reverse-false .shape-fill {
+    fill: var(--default-color);
 }
 
 
@@ -173,4 +176,25 @@ html {
 
 .custom-shape-divider-top-1710986610 .shape-fill {
     fill: #FFFFFF;
+}
+
+
+.custom-shape-divider-top-1711097833 {
+    position: absolute;
+    top: -1px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1711097833 svg {
+    position: relative;
+    display: block;
+    width: calc(135% + 1.3px);
+    height: 35px;
+}
+
+.custom-shape-divider-top-1711097833 .shape-fill {
+    fill: #0f223b;
 }
