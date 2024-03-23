@@ -8,10 +8,12 @@
   <title>@yield('title')</title>
   <!-- CDN ASSETS -->
   <link rel="stylesheet" href="./cdn-assets/css/google-poppins.css">
+  <link rel="stylesheet" href="./cdn-assets/css/google-kreon.css">
   <link rel="stylesheet" href="./cdn-assets/css/google-archivo.css">
   <link rel="stylesheet" href="./cdn-assets/css/animate.min.css"/>
   <script src="./cdn-assets/js/ScrollMagic.min.js"></script>
   <script src="./cdn-assets/js/debug.addIndicators.min.js"></script>
+  <link rel="icon" type="image/png" href="./images/logo.png">
   <!-- CDN ASSETS -->
 
   <!-- TAILWDIND OUTPUT -->
@@ -27,7 +29,7 @@
   <!-- CUSTOM CSS -->
 
 </head>
-<body class="poppins-light">
+<body class="poppins-light scroll-smooth">
 
     <main>
         @yield('mainContent')

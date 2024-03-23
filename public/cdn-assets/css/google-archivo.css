@@ -1,8 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
 .archivo-black-regular {
     font-family: "Archivo Black", sans-serif;
     font-weight: 300;
     font-style: normal;
   }
-  
+.archivo-black-small {
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+
+
+
+  .libre-baskerville-regular {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .libre-baskerville-bold {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  .libre-baskerville-regular-italic {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: italic;
+  }

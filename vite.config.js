@@ -8,4 +8,8 @@ export default defineConfig({
             refresh: true,
         }),
     ],
+    server: {
+        host: '10.151.5.53', // The custom IP address
+        // port: '8001',
+    },
 });

@@ -1,12 +1,12 @@
 
-<section class="default-bg w-full mt-28 text-white relative h-[28rem] md:h-[32-rem] lg:h-[38rem]" >
+<section class="default-bg max-w-full overflow-hidden mt-20 text-white relative h-[28rem] md:h-[32-rem] lg:h-[38rem]" >
     <div style="background-image: url(./images/services.jpeg);" class="default-bg bg-center bg-no-repeat bg-cover absolute h-full w-full opacity-30"></div>
     <div class="absolute h-full w-full">
         <div class="flex flex-col justify-center items-center h-full  mx-2 sm:mx-5 md:px-24 opacity-100">
-            <div class="font-light text-center lg:text-left text-3xl sm:text-4xl md:text:text-5xl lg:text-6xl  animate__animated animate__fadeInLeft animate__delay-1s archivo-black-regular">
+            <div class="font-light text-center lg:text-left text-3xl sm:text-4xl md:text:text-5xl lg:text-6xl  animate__animated animate__fadeInLeft animate__delay-1s libre-baskerville-regular-italic">
                 Our Services
             </div>
-            <div class="text-center lg:text-left mt-6  text-sm lg:text-base font-light animate__animated animate__fadeInLeft animate__delay-2s">
+            <div class="text-center lg:text-left mt-6  text-sm lg:text-base font-light source-code-pro-200 animate__animated animate__fadeInLeft animate__delay-2s">
                 Get expert advice and strategic insights personalized to your needs.
             </div>
         </div>
