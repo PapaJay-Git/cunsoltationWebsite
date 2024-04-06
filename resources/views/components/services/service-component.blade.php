@@ -2,28 +2,28 @@
 
 
 <section class="px-4 max-w-full overflow-hidden py-12 md:py-20 relative {{ $isReverse ? 'default-bg text-white' : 'bg-white default-text-color' }}">
-    <div class="absolute left-0 top-0 w-1/2 xl:w-1/3 h-32  {{ $isReverse ? 'bg-gray-900' : 'bg-sky-200' }} opacity-0 animate__animated animate__delay-1s {{ $classIdentifier."-4" }} ">
+    <div class="absolute left-0 top-0 w-1/2 xl:w-1/3 h-32  {{ $isReverse ? 'bg-gray-900' : 'bg-sky-200' }} invisible animate__animated animate__delay-1s {{ $classIdentifier."-4" }} ">
 
     </div>
-    <div class="absolute right-0 bottom-0 w-2/3 h-32 {{ $isReverse ? 'bg-gray-900' : 'bg-sky-200' }} opacity-0 animate__animated animate__delay-1s {{ $classIdentifier."-5" }} ">
+    <div class="absolute right-0 bottom-0 w-2/3 h-32 {{ $isReverse ? 'bg-gray-900' : 'bg-sky-200' }} invisible animate__animated animate__delay-1s {{ $classIdentifier."-5" }} ">
 
     </div>
     <div class="container mx-auto">
       <div class="grid grid-cols-12 gap-4">
 
         <div class="col-span-12 md:col-span-5 xl:col-span-4 md:-mt-5 flex justify-center  mx-5 ">
-            <img src="./images/{{ $imageBackground }}" alt="{{ $serviceName }} image background" class="h-56 w-full sm:h-72 md:h-[76] object-cover shadow-xl shadow-sky-900 opacity-0 animate__animated animate__delay-1s {{ $classIdentifier."-1" }} ">
+            <img src="./images/{{ $imageBackground }}" alt="{{ $serviceName }} image background" class="h-56 w-full sm:h-72 md:h-[76] object-cover shadow-xl shadow-sky-900 invisible animate__animated animate__delay-1s {{ $classIdentifier."-1" }} ">
         </div>
 
         <div class="col-span-12 md:col-span-7 xl:col-span-8  mx-4 sm:mx-6 md:mx-8 pt-5 md:pt-0">
             <div class="flex h-full w-full flex-col justify-center">
                 <div class="font-extralight lg:font-light">
                     <div class="text-center md:text-left text-lg sm:text-xl md:text:text-2xl md:text-3xl  animate__animated animate__delay-1s libre-baskerville-regular-italic
-                    {{ $classIdentifier."-2" }} opacity-0">
+                    {{ $classIdentifier."-2" }} invisible">
                         {{ $serviceName }}
                     </div>
                 </div>
-                <div class="text-center md:text-left mt-6 text-xs md:text-sm font-normal source-code-pro-200 animate__animated animate__delay-2s pt-3 pb-10 lg:pb-5 {{ $classIdentifier."-3" }} opacity-0">
+                <div class="text-center md:text-left mt-6 text-xs md:text-sm font-normal source-code-pro-200 animate__animated animate__delay-2s pt-3 pb-10 lg:pb-5 {{ $classIdentifier."-3" }} invisible">
                     {{ $description }}
                 </div>
             </div>

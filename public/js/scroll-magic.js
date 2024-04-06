@@ -75,10 +75,10 @@ function scrollMagicPerElement(elemenentID, animation, childAnimation = []){
     })
     .on("enter", function () {
       document.querySelector(elemenentID)?.classList.add(animation);
-      document.querySelector(elemenentID)?.classList.remove('opacity-0');
+      document.querySelector(elemenentID)?.classList.remove('invisible');
       childAnimation.forEach(function(child){
         document.querySelector(child.elementID)?.classList.add(child.animation);
-        document.querySelector(child.elementID)?.classList.remove('opacity-0');
+        document.querySelector(child.elementID)?.classList.remove('invisible');
       });
     })
     .on("leave", function () {

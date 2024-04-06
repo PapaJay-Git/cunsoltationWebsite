@@ -1,12 +1,12 @@
 
 <section class="relative px-4 max-w-full overflow-hidden py-16 md:py-22 lg:py-28 default-text-color">
-    <div class="absolute left-0 lg:top-0 bottom-0 my-auto bg-gray-200 w-5/6 lg:w-3/4 h-5/6 lg:h-2/3 opacity-0 animate__animated animate__delay-1s section-2-bg"></div>
+    <div class="absolute left-0 lg:top-0 bottom-0 my-auto bg-gray-200 w-5/6 lg:w-3/4 h-5/6 lg:h-2/3 invisible animate__animated animate__delay-1s section-2-bg"></div>
     <div class="container mx-auto ">
 
-        <div class="block text-xl md:text-2xl lg:text-3xl text-center opacity-0 animate__animated animate__delay-1s section-2-header libre-baskerville-regular-italic">
+        <div class="block text-xl md:text-2xl lg:text-3xl text-center invisible animate__animated animate__delay-1s section-2-header libre-baskerville-regular-italic">
          Integrated Solutions & Support
         </div>
-        <div class="block source-code-pro-200 text-xs md:text-sm text-center px-5 sm:px-10 md:px-16 lg:px-20 opacity-0 animate__animated animate__delay-1s section-2-description pt-5">
+        <div class="block source-code-pro-200 text-xs md:text-sm text-center px-5 sm:px-10 md:px-16 lg:px-20 invisible animate__animated animate__delay-1s section-2-description pt-5">
           We offer Integrated Solutions & Support to guide businesses on their journey to success
         </div>
 
