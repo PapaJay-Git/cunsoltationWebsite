@@ -19,7 +19,7 @@
                     <a href="/about-us" class="source-code-pro-200 bg-blue-700 rounded-full p-4 font-medium text-xs md:text-sm  hover:bg-blue-600 text-white mt-2 block w-max">Find More About Us</a>
                 </p>
             </div>
-            <div class="col-span-12 lg:col-span-5 default-bg lg:-mt-5 flex justify-center lg:block lg:justify-start mx-2 sm:mx-4 order-1 lg:order-2 mb-10 lg:mb-0">
+            <div class="col-span-12 lg:col-span-5 default-bg lg:-mt-5 hidden lg:block lg:justify-start mx-2 sm:mx-4 order-1 lg:order-2 mb-10 lg:mb-0">
                 <img src="./images/success.jpg" alt="Intron image" class="h-56 w-56 sm:h-72 sm:w-72 md:h-80 md:w-80 lg:h-96 lg:w-96 object-cover animate__animated animate__fadeInLeft rounded-full animate__delay-2s shadow-lg shadow-sky-400 ">
             </div>
         </div>

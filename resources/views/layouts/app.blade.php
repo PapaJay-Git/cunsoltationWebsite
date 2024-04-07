@@ -19,13 +19,13 @@
   <!-- TAILWDIND OUTPUT -->
   @vite('resources/css/app.css')
 
-  <link rel="stylesheet" href="./cdn-assets/owlcarousel/owl.carousel.min.css">
-<link rel="stylesheet" href="./cdn-assets/owlcarousel/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./cdn-assets/owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="./cdn-assets/owlcarousel/owl.theme.default.min.css">
   <!-- TAILWDIND OUTPUT -->
 
   <!-- CUSTOM CSS -->
-  <link href="./css/styles.css" rel="stylesheet">
-  <link href="./css/hamburger.css" rel="stylesheet">
+  <link href="./css/styles.css?v={{ config("app.scripts_version") }}" rel="stylesheet">
+  <link href="./css/hamburger.css?v={{ config("app.scripts_version") }}" rel="stylesheet">
   <!-- CUSTOM CSS -->
 
 </head>
@@ -36,9 +36,9 @@
         <x-footer-component />
     </main>
 
-    <script src="./cdn-assets/js/jquery-3.6.4.min.js"></script>
-<script src="./cdn-assets/owlcarousel/owl.carousel.min.js"></script>
-<script src="./js/scroll-magic.js"></script>
-<script src="./js/hamburger.js"></script>
+    <script src="./cdn-assets/js/jquery-3.6.4.min.js?v={{ config("app.scripts_version") }}"></script>
+    <script src="./cdn-assets/owlcarousel/owl.carousel.min.js?v={{ config("app.scripts_version") }}"></script>
+    <script src="./js/scroll-magic.js?v={{ config("app.scripts_version") }}"></script>
+    <script src="./js/hamburger.js?v={{ config("app.scripts_version") }}"></script>
 </body>
 </html>

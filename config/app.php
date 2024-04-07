@@ -60,6 +60,18 @@ return [
 
     /*
     |--------------------------------------------------------------------------
+    | Scripts Versioning
+    |--------------------------------------------------------------------------
+    |
+    | This value determines the "version" of your scripts such as css/js
+    | This will help you remove the cached versions of these in users web browsers
+    |
+    */
+
+    'scripts_version' => '1.0.0.6',
+
+    /*
+    |--------------------------------------------------------------------------
     | Application Timezone
     |--------------------------------------------------------------------------
     |
